@@ -5,6 +5,10 @@ const baseURL = `http://localhost:3000/api/members`;
 
 const displayMembers = (arr) => {
   console.log(arr);
+  dashboard.innerHTML = ``;
+  for (i = 0; i < arr.length; i++) {
+    createMemberBanner(arr[i]);
+  }
 };
 
 const memberCallback = ({ data: members }) => displayMembers(members);
@@ -19,7 +23,7 @@ const createMember = (body) => {
 };
 
 const deleteMember = (id) => {
-  axios.delete(`${baseURL}, ${id}`).then(memberCallback).catch(errCallback);
+  axios.delete(`${baseURL}/${id}`).then(memberCallback).catch(errCallback);
 };
 
 const submitHandler = (event) => {
@@ -40,6 +44,20 @@ const submitHandler = (event) => {
   name.value = "";
   role.value = "parent";
   location.value = "home";
+};
+
+const createMemberBanner = (member) => {
+  const memberCard = document.createElement("div");
+  memberCard.classList.add("member-banner");
+
+  memberCard.innerHTML = `
+    <img src="../images/placeholder-image.jpg"/>
+    <p class="member-name">${member.name}</p>
+    <p class="member-role">${member.role}</p>
+    <p class="member-location">${member.location}</p>
+    <button onclick="deleteMember(${member.id})">Delete Entry</button>`;
+
+  dashboard.appendChild(memberCard);
 };
 
 form.addEventListener("submit", submitHandler);

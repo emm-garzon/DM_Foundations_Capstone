@@ -20,6 +20,6 @@ module.exports = {
   deleteMember: (req, res) => {
     let index = members.findIndex((elem) => elem.id === +req.params.id);
     members.splice(index, 1);
-    res.status(200).send(houses);
+    res.status(200).send(members);
   },
 };
