@@ -51,7 +51,7 @@ const createMemberBanner = (member) => {
   memberCard.classList.add("member-banner");
 
   memberCard.innerHTML = `
-    <img src="../images/placeholder-image.jpg"/>
+    <img src="../images/${member.location}.jpg"/>
     <p class="member-name">${member.name}</p>
     <p class="member-role">${member.role}</p>
     <p class="member-location">${member.location}</p>
