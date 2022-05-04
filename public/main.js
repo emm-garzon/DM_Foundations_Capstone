@@ -39,11 +39,23 @@ const submitHandler = (event) => {
     location: location.value,
   };
 
-  createMember(memberObj);
+  if (
+    name.value === "" ||
+    role.value === "label" ||
+    location.value === "label"
+  ) {
+    alert("form fields cannot be empty");
 
-  name.value = "";
-  role.value = "label";
-  location.value = "label";
+    name.value = "";
+    role.value = "label";
+    location.value = "label";
+  } else {
+    createMember(memberObj);
+
+    name.value = "";
+    role.value = "label";
+    location.value = "label";
+  }
 };
 
 const createMemberBanner = (member) => {
@@ -59,7 +71,7 @@ const createMemberBanner = (member) => {
         <p class="member-name">${member.name}</p>
         <p class="member-role">${member.role}</p>
         <p class="member-location">${member.location}</p>
-        <button onclick="deleteMember(${member.id})">Delete Entry</button>
+        <button id="delete-entry" onclick="deleteMember(${member.id})">Delete Entry</button>
       </article>
     </div>
     `;
