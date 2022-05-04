@@ -21,7 +21,7 @@ body {
   border-bottom: 5px solid white;
   width: 250px;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   padding: 20px 65px;
 }
 
@@ -33,20 +33,50 @@ body {
   position: fixed;
 }
 
+#main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #name {
   display: block;
-  width: 99%;
+  width: 84%;
   padding: 0;
+  margin-bottom: 50px;
+}
+
+input[type="text"] {
+  font-size: 25px;
+}
+
+select {
+  font-size: 25px;
 }
 
 #role {
   display: block;
-  width: 100%;
+  width: 85%;
+  margin-bottom: 50px;
 }
 
 #location {
   display: block;
-  width: 100%;
+  width: 85%;
+  margin-bottom: 50px;
+}
+
+button {
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 10px 100px;
+  background-color: black;
+  color: white;
+  border-width: 0px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* member-banner */

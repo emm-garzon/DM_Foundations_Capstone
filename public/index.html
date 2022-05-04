@@ -14,12 +14,13 @@
         <figure id="logo">
           <img src="../images/crystal-ball.png" alt="logo" id="logo-img" />
         </figure>
-        <form>
-          <input type="text" id="name" placeholder="Enter Name" />
+        <form id="main-form">
+          <input type="text" id="name" placeholder="ENTER NAME" />
 
-          <label for="roles">Select your role:</label>
+          <!-- <label for="roles">Select your role:</label> -->
 
-          <select name="role" id="role">
+          <select name="role" id="role" placeholder="Select Role">
+            <option value="label" disabled selected>SELECT ROLE</option>
             <option value="parent">Parent</option>
             <option value="guardian">Guardian</option>
             <option value="grandfather">Grandfather</option>
@@ -32,9 +33,10 @@
             <option value="friend">Friend</option>
           </select>
 
-          <label for="location">Select your location:</label>
+          <!-- <label for="location">Select your location:</label> -->
 
           <select name="location" id="location">
+            <option value="label" disabled selected>SELECT LOCATION</option>
             <option value="home">Home</option>
             <option value="school">School</option>
             <option value="work">Work</option>

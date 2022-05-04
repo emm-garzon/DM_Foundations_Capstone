@@ -42,8 +42,8 @@ const submitHandler = (event) => {
   createMember(memberObj);
 
   name.value = "";
-  role.value = "parent";
-  location.value = "home";
+  role.value = "label";
+  location.value = "label";
 };
 
 const createMemberBanner = (member) => {
