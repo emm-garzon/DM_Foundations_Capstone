@@ -44,7 +44,7 @@ const submitHandler = (event) => {
     role.value === "label" ||
     location.value === "label"
   ) {
-    alert("form fields cannot be empty");
+    alert("Fields Cannot Be Blank");
 
     name.value = "";
     role.value = "label";

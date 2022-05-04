@@ -83,14 +83,42 @@ button:hover {
 
 #member-card {
   display: flex;
-  border: 2px solid black;
-  border-radius: 15px;
+  border: 3px solid black;
+  border-radius: 18px;
   margin: 0 0 15px 0;
+}
+
+#banner-image {
+  padding: 1em;
+  background-color: grey;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
 }
 
 #banner-info {
   align-self: center;
   font-size: 25px;
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+.member-name {
+  margin: 20px 0px;
+}
+
+.member-role {
+  margin: 20px 0px;
+}
+
+.member-location {
+  margin: 20px 0px;
+}
+
+#delete-entry {
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 10px 100px;
+  border-width: 0px;
 }
 
 #banners {

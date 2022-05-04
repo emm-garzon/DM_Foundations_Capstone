@@ -11,49 +11,53 @@
   <body>
     <div id="main-view">
       <div id="form">
-        <figure id="logo">
-          <img src="../images/crystal-ball.png" alt="logo" id="logo-img" />
-        </figure>
-        <form id="main-form">
-          <input type="text" id="name" placeholder="ENTER NAME" />
+        <header>
+          <figure id="logo">
+            <img src="../images/crystal-ball.png" alt="logo" id="logo-img" />
+          </figure>
+        </header>
+        <section>
+          <form id="main-form">
+            <input type="text" id="name" placeholder="ENTER NAME" />
 
-          <!-- <label for="roles">Select your role:</label> -->
+            <!-- <label for="roles">Select your role:</label> -->
 
-          <select name="role" id="role" placeholder="Select Role">
-            <option value="label" disabled selected>SELECT ROLE</option>
-            <option value="parent">Parent</option>
-            <option value="guardian">Guardian</option>
-            <option value="grandfather">Grandfather</option>
-            <option value="grandmother">Grandmother</option>
-            <option value="son">Son</option>
-            <option value="daughter">Daughter</option>
-            <option value="uncle">Uncle</option>
-            <option value="aunt">Aunt</option>
-            <option value="cousin">Cousin</option>
-            <option value="friend">Friend</option>
-          </select>
+            <select name="role" id="role" placeholder="Select Role">
+              <option value="label" disabled selected>SELECT ROLE</option>
+              <option value="parent">Parent</option>
+              <option value="guardian">Guardian</option>
+              <option value="grandfather">Grandfather</option>
+              <option value="grandmother">Grandmother</option>
+              <option value="son">Son</option>
+              <option value="daughter">Daughter</option>
+              <option value="uncle">Uncle</option>
+              <option value="aunt">Aunt</option>
+              <option value="cousin">Cousin</option>
+              <option value="friend">Friend</option>
+            </select>
 
-          <!-- <label for="location">Select your location:</label> -->
+            <!-- <label for="location">Select your location:</label> -->
 
-          <select name="location" id="location">
-            <option value="label" disabled selected>SELECT LOCATION</option>
-            <option value="home">Home</option>
-            <option value="school">School</option>
-            <option value="work">Work</option>
-            <option value="gym">Gym</option>
-            <option value="park">Park</option>
-            <option value="restaurant">Restaurant</option>
+            <select name="location" id="location">
+              <option value="label" disabled selected>SELECT LOCATION</option>
+              <option value="home">Home</option>
+              <option value="school">School</option>
+              <option value="work">Work</option>
+              <option value="gym">Gym</option>
+              <option value="park">Park</option>
+              <option value="restaurant">Restaurant</option>
 
-            <option value="church">Church</option>
-            <option value="md-appt">Doctor's Appointment</option>
-            <option value="library">Library</option>
-            <option value="sports">Sports</option>
-            <option value="shopping">Shopping</option>
-            <option value="in-transit">In-Transit</option>
-            <option value="jail">Prison</option>
-          </select>
-          <button id="check-in">CHECK-IN</button>
-        </form>
+              <option value="church">Church</option>
+              <option value="doctor's appointment">Doctor's Appointment</option>
+              <option value="library">Library</option>
+              <option value="sports">Sports</option>
+              <option value="shopping">Shopping</option>
+              <option value="in-transit">In-Transit</option>
+              <option value="jail">Prison</option>
+            </select>
+            <button id="check-in">CHECK-IN</button>
+          </form>
+        </section>
       </div>
 
       <div id="banners">
