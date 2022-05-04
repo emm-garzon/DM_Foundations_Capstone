@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+/* main container */
+
+#main-view {
+  display: flex;
+}
+
+/* form */
+
+#logo {
+  width: 250px;
+}
+
+#form {
+  width: 18em;
+  background-color: grey;
+  font-size: 25px;
+}
+
+#name {
+  display: block;
+}
+
+#role {
+  display: block;
+}
+
+#location {
+  display: block;
+}
+
+/* member-banner */
+
+#member-card {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+#banner-info {
+  align-self: center;
+}
+
+#banners {
+  width: 100vw;
+  margin: 15px;
+}

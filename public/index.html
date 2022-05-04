@@ -8,41 +8,55 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <form>
-      <input type="text" id="name" placeholder="Enter Name" />
+    <div id="main-view">
+      <div id="form">
+        <figure>
+          <img src="../images/crystal-ball.png" alt="logo" id="logo" />
+        </figure>
+        <form>
+          <input type="text" id="name" placeholder="Enter Name" />
 
-      <label for="roles">Select your role:</label>
+          <label for="roles">Select your role:</label>
 
-      <select name="role" id="role">
-        <option value="parent">Parent</option>
-        <option value="guardian">Guardian</option>
-        <option value="grandfather">Grandfather</option>
-        <option value="grandmother">Grandmother</option>
-        <option value="son">Son</option>
-        <option value="daughter">Daughter</option>
-        <option value="uncle">Uncle</option>
-        <option value="aunt">Aunt</option>
-        <option value="cousin">Cousin</option>
-        <option value="friend">Friend</option>
-      </select>
+          <select name="role" id="role">
+            <option value="parent">Parent</option>
+            <option value="guardian">Guardian</option>
+            <option value="grandfather">Grandfather</option>
+            <option value="grandmother">Grandmother</option>
+            <option value="son">Son</option>
+            <option value="daughter">Daughter</option>
+            <option value="uncle">Uncle</option>
+            <option value="aunt">Aunt</option>
+            <option value="cousin">Cousin</option>
+            <option value="friend">Friend</option>
+          </select>
 
-      <label for="location">Select your location:</label>
+          <label for="location">Select your location:</label>
 
-      <select name="location" id="location">
-        <option value="home">Home</option>
-        <option value="school">School</option>
-        <option value="work">Work</option>
-        <option value="church">Church</option>
-        <option value="library">Library</option>
-        <option value="sports">Sports</option>
-        <option value="shopping">Shopping</option>
-        <option value="in-transit">In-Transit</option>
-      </select>
-      <button>CHECK-IN</button>
-    </form>
+          <select name="location" id="location">
+            <option value="home">Home</option>
+            <option value="school">School</option>
+            <option value="work">Work</option>
+            <option value="gym">Gym</option>
+            <option value="park">Park</option>
+            <option value="restaurant">Restaurant</option>
 
-    <section id="dashboard"></section>
+            <option value="church">Church</option>
+            <option value="md-appt">Doctor's Appointment</option>
+            <option value="library">Library</option>
+            <option value="sports">Sports</option>
+            <option value="shopping">Shopping</option>
+            <option value="in-transit">In-Transit</option>
+            <option value="jail">Prison</option>
+          </select>
+          <button>CHECK-IN</button>
+        </form>
+      </div>
 
+      <div id="banners">
+        <section id="dashboard"></section>
+      </div>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
   </body>

@@ -51,11 +51,18 @@ const createMemberBanner = (member) => {
   memberCard.classList.add("member-banner");
 
   memberCard.innerHTML = `
-    <img src="../images/${member.location}.jpg"/>
-    <p class="member-name">${member.name}</p>
-    <p class="member-role">${member.role}</p>
-    <p class="member-location">${member.location}</p>
-    <button onclick="deleteMember(${member.id})">Delete Entry</button>`;
+    <div id="member-card">  
+      <figure id="banner-image">
+        <img src="../images/${member.location}.png" style="width: 250px"/>
+      </figure>  
+      <article id="banner-info">
+        <p class="member-name">${member.name}</p>
+        <p class="member-role">${member.role}</p>
+        <p class="member-location">${member.location}</p>
+        <button onclick="deleteMember(${member.id})">Delete Entry</button>
+      </article>
+    </div>
+    `;
 
   dashboard.appendChild(memberCard);
 };
