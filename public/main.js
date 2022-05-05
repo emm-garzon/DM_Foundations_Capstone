@@ -67,7 +67,7 @@ const createMemberBanner = (member) => {
   memberCard.innerHTML = `
   <div id="member-card">  
   <figure id="banner-image">
-  <img src="../images/${member.location}.png" style="width: 250px"/>
+  <img src="../images/${member.location}.png" style="width: 200px"/>
   </figure>  
   <article id="banner-info">
   <p class="member-name">N<span>ame:</span> ${member.name}</p>

@@ -4,6 +4,7 @@ let memberID = 2;
 module.exports = {
   getMembers: (req, res) => {
     res.status(200).send(members);
+    // console.log("data successfully sent");
   },
   postMember: (req, res) => {
     const { name, role, location } = req.body;
