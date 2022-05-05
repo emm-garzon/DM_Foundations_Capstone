@@ -55,6 +55,8 @@ const submitHandler = (event) => {
     name.value = "";
     role.value = "label";
     location.value = "label";
+
+    alert("Member successfully added!");
   }
 };
 
@@ -63,18 +65,18 @@ const createMemberBanner = (member) => {
   memberCard.classList.add("member-banner");
 
   memberCard.innerHTML = `
-    <div id="member-card">  
-      <figure id="banner-image">
-        <img src="../images/${member.location}.png" style="width: 250px"/>
-      </figure>  
-      <article id="banner-info">
-        <p class="member-name">N<span>ame:</span> ${member.name}</p>
-        <p class="member-role">R<span>ole:</span> ${member.role}</p>
-        <p class="member-location">L<span>ocation:</span> ${member.location}</p>
-        <img src="../images/delete.png" style="width: 40px" id="deleteBtn" onclick="deleteMember(${member.id})"/>
-      </article>
+  <div id="member-card">  
+  <figure id="banner-image">
+  <img src="../images/${member.location}.png" style="width: 250px"/>
+  </figure>  
+  <article id="banner-info">
+  <p class="member-name">N<span>ame:</span> ${member.name}</p>
+  <p class="member-role">R<span>ole:</span> ${member.role}</p>
+  <p class="member-location">L<span>ocation:</span> ${member.location}</p>
+  <img src="../images/delete.png" style="width: 40px" id="deleteBtn" onclick="deleteMember(${member.id})"/>
+  </article>
     </div>
-        `;
+    `;
 
   // <button id="delete-entry" onclick="deleteMember(${member.id})">Delete Entry</button>
 
