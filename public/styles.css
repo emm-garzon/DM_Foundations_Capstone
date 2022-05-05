@@ -81,8 +81,9 @@ select {
   font-size: 25px;
   border-radius: 15px;
   padding: 10px 125px;
-  background-color: #e8db7d;
-  color: black;
+  /* background-color: #e8db7d; */
+  background-color: black;
+  color: white;
   border-width: 0px;
   margin-top: 1rem;
   transition: transform 0.2s;
