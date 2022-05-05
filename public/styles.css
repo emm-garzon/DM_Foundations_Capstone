@@ -1,11 +1,12 @@
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans";
 }
 
 /* main container */
 
 #main-view {
   display: flex;
+  background-color: #ffffff;
 }
 
 /* form */
@@ -23,12 +24,22 @@ body {
   margin-top: 1em;
   margin-bottom: 3em;
   padding: 20px 65px;
+  /* animation: glow 1s infinite alternate; */
 }
+
+/* @keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #aef4af;
+  }
+} */
 
 #form {
   width: 18em;
   height: 100vh;
-  background-color: grey;
+  background-color: #386fa4;
   font-size: 25px;
   position: fixed;
 }
@@ -69,14 +80,17 @@ select {
 #check-in {
   font-size: 25px;
   border-radius: 15px;
-  padding: 10px 100px;
-  background-color: black;
-  color: white;
+  padding: 10px 125px;
+  background-color: #e8db7d;
+  color: black;
   border-width: 0px;
+  margin-top: 1rem;
+  transition: transform 0.2s;
 }
 
 button:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* member-banner */
@@ -86,20 +100,29 @@ button:hover {
   border: 3px solid black;
   border-radius: 18px;
   margin: 10px 15px 15px 0;
+  background-color: #95a3b3;
+  letter-spacing: 0.12rem;
+}
+
+span {
+  text-transform: lowercase;
 }
 
 #banner-image {
   padding: 1em;
-  background-color: grey;
+  background-color: #c2e7da;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
+  border-right: 5px solid #386fa4;
 }
 
 #banner-info {
   align-self: center;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: 1em;
   text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bolder;
 }
 
 .member-name {
@@ -114,12 +137,22 @@ button:hover {
   margin: 20px 0px;
 }
 
-#delete-entry {
+#deleteBtn {
+  transition: transform 0.2s;
+}
+
+#deleteBtn:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* #delete-entry {
   font-size: 25px;
   border-radius: 15px;
   padding: 10px 100px;
   border-width: 0px;
-}
+  background-color: #ffffff;
+} */
 
 #banners {
   width: 100vw;
