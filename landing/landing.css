@@ -13,7 +13,7 @@ img {
 form {
   display: inline-block;
   width: 400px;
-  height: 600px;
+  height: 625px;
   /* margin: 0 auto; */
   border-radius: 25px;
   position: fixed;
@@ -27,12 +27,15 @@ form {
   /* display: inline-block; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 input[type="text"] {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+#famName {
+  width: 325px;
 }
 
 #submit {
@@ -43,7 +46,7 @@ input[type="text"] {
   background-color: black;
   color: white;
   border-width: 0px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   transition: transform 0.2s;
 }
 
