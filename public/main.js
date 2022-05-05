@@ -86,3 +86,21 @@ const createMemberBanner = (member) => {
 form.addEventListener("submit", submitHandler);
 
 getAllMembers();
+
+// welcome banner
+
+const welcomeBanner = document.getElementById("welcome-banner");
+
+// welcomeBanner.innerText +=
+//   "Welcome," +
+//   " " +
+//   window.localStorage.getItem("familyName") +
+//   " " +
+//   "family!";
+
+welcomeBanner.innerHTML = `
+  <h1>Welcome <span id="family-name">'${window.localStorage.getItem(
+    "familyName"
+  )}'</span> family!
+  </h1>
+  `;
