@@ -1,13 +1,14 @@
 body {
-  background-color: #386fa4;
+  background-color: #ffffff;
 }
 
 img {
   width: 325px;
-  border-top: 5px solid grey;
-  border-bottom: 5px solid grey;
+  /* border-top: 5px solid grey;
+  border-bottom: 5px solid grey; */
   padding: 1em;
   margin: 3em 0;
+  filter: invert(100%);
 }
 
 form {
@@ -23,7 +24,7 @@ form {
 }
 
 #user-info {
-  background-color: white;
+  background-color: #386fa4;
   /* display: inline-block; */
   display: flex;
   flex-direction: column;
@@ -44,9 +45,9 @@ input[type="text"] {
   border-radius: 15px;
   padding: 10px 100px;
   /* background-color: #e8db7d; */
-  background-color: black;
-  color: white;
-  border-width: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  border-width: 0;
   margin-top: 2rem;
   transition: transform 0.2s;
 }

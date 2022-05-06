@@ -6,6 +6,7 @@ body {
 
 #main-view {
   display: flex;
+  /* background-color: #386fa4; */
   background-color: #ffffff;
 }
 
@@ -18,12 +19,13 @@ body {
 
 #logo-img {
   /* border: 5px solid white; */
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  width: 250px;
+  /* border-top: 5px solid white;
+  border-bottom: 5px solid white; */
+  width: 300px;
   margin-top: 1em;
   margin-bottom: 2em;
   padding: 20px 65px;
+  filter: invert(100%);
   /* animation: glow 1s infinite alternate; */
 }
 
@@ -58,6 +60,7 @@ body {
   width: 18em;
   height: 100vh;
   background-color: #386fa4;
+  /* background-color: #ffffff; */
   font-size: 25px;
   position: fixed;
 }
