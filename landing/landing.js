@@ -1,5 +1,5 @@
 const userInfo = document.getElementById("user-info");
-const famNameInput = document.getElementById("famName");
+let famNameInput = document.getElementById("famName");
 
 userInfo.addEventListener("submit", (event) => {
   event.preventDefault();
