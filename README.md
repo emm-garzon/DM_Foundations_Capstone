@@ -13,8 +13,6 @@ Coded over the course of a week as a mid-term capstone for the DevMountain Web D
 
 While I was ultimately responsible for the code written, I had the benefit of counsel from my instructors, the opportunity to workshop ideas with my classmates, and my family tested the application ad nausem -- all of whom I thank for their time, and support, as I continue this journey in learning how to code.
 
-NOTE: All the icons used were downloaded from:
+NOTE: All the icons used were designed by 'FREEPIK', and downloaded from:
 
 - https://www.flaticon.com/
-
-and designed by: FREEPIK
