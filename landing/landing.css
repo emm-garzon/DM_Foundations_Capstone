@@ -4,8 +4,6 @@ body {
 
 img {
   width: 325px;
-  /* border-top: 5px solid grey;
-  border-bottom: 5px solid grey; */
   padding: 1em;
   margin: 3em 0;
   filter: invert(100%);
@@ -15,7 +13,6 @@ form {
   display: inline-block;
   width: 400px;
   height: 625px;
-  /* margin: 0 auto; */
   border-radius: 25px;
   position: fixed;
   top: 50%;
@@ -25,7 +22,6 @@ form {
 
 #user-info {
   background-color: #386fa4;
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +41,6 @@ input[type="text"] {
   font-size: 25px;
   border-radius: 15px;
   padding: 10px 100px;
-  /* background-color: #e8db7d; */
   background-color: #000000;
   color: #ffffff;
   border-width: 0;

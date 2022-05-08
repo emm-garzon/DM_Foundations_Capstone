@@ -78,8 +78,6 @@ const createMemberBanner = (member) => {
     </div>
     `;
 
-  // <button id="delete-entry" onclick="deleteMember(${member.id})">Delete Entry</button>
-
   dashboard.appendChild(memberCard);
 };
 
@@ -90,13 +88,6 @@ getAllMembers();
 // welcome banner
 
 const welcomeBanner = document.getElementById("welcome-banner");
-
-// welcomeBanner.innerText +=
-//   "Welcome," +
-//   " " +
-//   window.localStorage.getItem("familyName") +
-//   " " +
-//   "family!";
 
 welcomeBanner.innerHTML = `
   <h1>Welcome <span id="family-name">'${window.localStorage.getItem(

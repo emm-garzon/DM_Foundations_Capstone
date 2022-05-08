@@ -6,7 +6,6 @@ body {
 
 #main-view {
   display: flex;
-  /* background-color: #386fa4; */
   background-color: #ffffff;
 }
 
@@ -18,25 +17,12 @@ body {
 }
 
 #logo-img {
-  /* border: 5px solid white; */
-  /* border-top: 5px solid white;
-  border-bottom: 5px solid white; */
   width: 300px;
   margin-top: 1em;
   margin-bottom: 2em;
   padding: 20px 65px;
   filter: invert(100%);
-  /* animation: glow 1s infinite alternate; */
 }
-
-/* @keyframes glow {
-  from {
-    box-shadow: 0 0 10px -10px #aef4af;
-  }
-  to {
-    box-shadow: 0 0 10px 10px #aef4af;
-  }
-} */
 
 /* welcome banner */
 
@@ -47,7 +33,6 @@ body {
   border-radius: 15px;
   margin-bottom: 2em;
   text-transform: uppercase;
-  /* font-style: italic; */
 }
 
 #family-name {
@@ -60,7 +45,6 @@ body {
   width: 18em;
   height: 100vh;
   background-color: #386fa4;
-  /* background-color: #ffffff; */
   font-size: 25px;
   position: fixed;
 }
@@ -102,7 +86,6 @@ select {
   font-size: 25px;
   border-radius: 15px;
   padding: 10px 125px;
-  /* background-color: #e8db7d; */
   background-color: black;
   color: white;
   border-width: 0px;
@@ -143,7 +126,6 @@ span {
   font-size: 35px;
   margin-left: 1em;
   text-transform: uppercase;
-  /* color: #95a3b3; */
   color: #565656;
   font-weight: bolder;
 }
@@ -168,14 +150,6 @@ span {
   cursor: pointer;
   transform: scale(1.25);
 }
-
-/* #delete-entry {
-  font-size: 25px;
-  border-radius: 15px;
-  padding: 10px 100px;
-  border-width: 0px;
-  background-color: #ffffff;
-} */
 
 #banners {
   width: 100vw;
